@@ -1,0 +1,152 @@
+body {
+    font-family: 'K2D', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure navbar is on top of other elements */
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    color: #fff;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-btn i {
+    margin-right: 10px;
+}
+
+.user-name {
+    margin: 0;
+    color: #fff;
+}
+
+.user-circle {
+    color: #fff;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 80%;
+    margin: 100px auto; /* Margin top to avoid overlapping with fixed navbar */
+    overflow: hidden; /* Ensure no content overflows */
+}
+
+.order-details {
+    padding: 20px;
+}
+
+.Order {
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+.Orders{
+    font-size: 35px;
+    text-align: center;
+}
+.Status-name {
+    font-size: 22px;
+    margin-left: 52%; /* Adjusted margin for better alignment */
+    font-weight: normal;
+    color: #ff0a0a;
+}
+
+.order-image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-top: -50px;
+    float: right; /* Align image to the right */
+    margin-left: 10px;
+}
+
+.bag-details {
+    margin-top: 20px;
+}
+
+.bag-row {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.bag-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+.bag-details {
+    display: flex;
+    flex-direction: row; /* จัดเรียงรายการเป็นแถว */
+    flex-wrap: wrap; /* อนุญาตให้รายการถูกห่อกลับ */
+    gap: 20px; /* ระยะห่างระหว่างรายการ */
+}
+.bag-item {
+    flex: 1 1 300px; /* กำหนดขนาดของแต่ละรายการ */
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* เพิ่มกรอบ */
+    padding: 10px;
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+}
+.order-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%; /* ปรับขนาดให้เหมาะสม */
+    height: auto;
+}
+.cart-table img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80px; /* ปรับขนาดให้เหมาะสม */
+    height: auto;
+    margin-right: 15%;
+}
+.cart-table {
+    width: 70%;
+    border-collapse: collapse;
+}
+.cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd; /* เพิ่มขอบของเซลล์ */
+}
+.cart-table th {
+    background-color: #959595; /* สีพื้นหลังของหัวตาราง */
+    border-bottom: 2px solid #ccc; /* ขอบล่างของหัวตาราง */
+}
+.cart-table td {
+    text-align: center; /* จัดเนื้อหาของ cell ให้อยู่กลาง */
+}
+.cart-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* สีพื้นหลังของแถวที่เป็นเลขคู่ */
+}
+.cart-table tr:hover {
+    background-color: #f1f1f1; /* สีพื้นหลังของแถวเมื่อเลื่อนเมาส์ */
+}

@@ -1,0 +1,43 @@
+.navbar{
+    background-color: #000;
+    height: 60px; 
+    display: flex; /* ใช้ Flexbox */
+    justify-content: flex-end; /* จัดให้เนื้อหาอยู่ด้านขวา */
+    align-items: center; /* จัดให้ปุ่มอยู่ตรงกลางแนวตั้ง */
+    min-height: 80px;
+    position: fixed;
+    top: 0; /* ให้ติดกับด้านบน */
+    left: 0;
+    right: 0;
+   
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 5px; /* ระยะห่างระหว่างไอคอน */
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-btn i {
+    margin-right: 15px;
+    color: white; /* เปลี่ยนสีไอคอน user-circle เป็นสีขาว */
+}
+
+.user-name {
+    margin: 0;
+    color: white; /* เปลี่ยนสีไอคอน user-circle เป็นสีขาว */
+}
+.user-circle {
+    color: white; /* เปลี่ยนสีไอคอน user-circle เป็นสีขาว */
+    margin-left: 10px;
+    
+}

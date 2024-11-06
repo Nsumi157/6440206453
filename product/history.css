@@ -1,0 +1,257 @@
+body {
+    font-family: 'K2D', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    
+}
+
+.navbar {
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-btn i {
+    margin-right: 15px;
+    color: white;
+}
+
+.user-name {
+    margin: 0;
+    color: white;
+}
+
+.user-circle {
+    color: white;
+    margin-left: 10px;
+}
+
+.history {
+    text-align: center;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    top: 110%;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* เปลี่ยนสีข้อความใน dropdown-menu */
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.nav-btn:hover .dropdown-menu {
+    display: block;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+header {
+    background-color: #343a40;
+    color: #e9ecef; /* สีข้อความใน header */
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500; /* ลดความหนาของฟอนต์ */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+tbody tr {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    color: #333; /* สีข้อความในเซลล์ */
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-weight: 500; /* ลดความหนาของฟอนต์ */
+}
+
+td img {
+    max-width: 100px;
+    height: auto;
+}
+
+.order-container {
+    margin: 20px;
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #fff; /* สีพื้นหลังของ order-item */
+}
+
+.order-header {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.order-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    display: flex;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 150px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-details {
+    flex: 2;
+    padding: 16px;
+}
+
+.product-details p {
+    margin: 5px 0;
+    color: #333; /* สีข้อความในรายละเอียดสินค้า */
+}
+
+.product-details p strong {
+    display: inline-block;
+    width: 100px;
+    font-weight: 500; /* ลดความหนาของฟอนต์ */
+}
+
+.product-details p:last-child {
+    margin-bottom: 0;
+}
+/* สไตล์สำหรับฟอร์มค้นหา */
+.search-form {
+    margin: 20px 0; /* ระยะห่างด้านบนและล่างของฟอร์มค้นหา */
+}
+
+.search-form .form-row {
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลาง */
+}
+
+.search-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-left: 57%;
+    width: 300px; /* กำหนดความกว้างของ select */
+    transition: border-color 0.3s ease;
+}
+
+.search-form select:focus {
+    border-color: #4CAF50; /* เปลี่ยนสีขอบเมื่อ select โฟกัส */
+    outline: none;
+}
+.order-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    margin-left: auto; /* Pushes the status to the right */
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-status-tracking {
+    text-align: right;
+}
+
+.red-status {
+color: red;
+font-weight: bold;
+}
+
+.green-status {
+color: green;
+font-weight: bold;
+}
+
+.review-button{
+margin-left: 150%;
+
+width: 100px;
+color: red;
+border-radius: 5px;
+
+padding: 5px 15px;
+background-color: #fff;
+}

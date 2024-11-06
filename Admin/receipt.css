@@ -1,0 +1,180 @@
+body {
+    font-family: 'K2D', sans-serif;
+    margin: 0;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+    position: relative; /* เพิ่ม position: relative */
+    font-size: 14px;
+}
+
+.container {
+    width: calc(103% - 14cm); /* กำหนดความกว้างให้น้อยกว่าความกว้างหน้าจอ 14 ซม. */
+    padding-left: 0cm; /* Padding ซ้ายและขวาเพื่อให้ข้อความอยู่กึ่งกลาง */
+    padding-right: 7cm;
+    box-sizing: border-box; /* เพื่อให้ padding รวมอยู่ในความกว้างทั้งหมด */
+    margin-right: 5%;
+}
+
+.manage {
+    text-align: left;
+    font-size: 24px;
+    color: hsl(0, 0%, 20%);
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.cart-table {
+    width: 170%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    text-align: left;
+    /* table-layout: fixed; ทำให้ช่องในตารางมีขนาดเท่ากัน */
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.cart-table th {
+    background-color: #fff;
+    color: #333;
+}
+
+.cart-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.cart-table td {
+    vertical-align: middle;
+    /* word-wrap: break-word; ทำให้ข้อความยาว ๆ ถูกตัดคำเพื่อให้พอดีกับช่อง */
+}
+
+.cart-table img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.manage-buttons {
+    display: flex;
+    flex-direction: column; /* จัดให้ปุ่มในคอลัมน์ */
+    align-items: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+}
+
+.manage-buttons button:first-child { /* ปุ่มแก้ไข */
+    background-color: #246911; /* สีเหลือง */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* เพิ่มช่องว่างระหว่างปุ่ม */
+    width: 80px; /* ทำให้ปุ่มมีขนาดเท่ากัน */
+}
+
+ 
+
+
+.manage-buttons button:last-child { /* ปุ่มลบ */
+    background-color: #246911;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* เพิ่มช่องว่างระหว่างปุ่ม */
+    width: 80px; /* ทำให้ปุ่มมีขนาดเท่ากัน */
+}
+
+.manage-buttons button:last-child:hover {
+    background-color: #246911;
+   
+}
+.cart-table img {
+    max-width: 150%; /* เพิ่มขนาดรูปภาพให้ใหญ่ขึ้น */
+    max-height: 200%;
+    object-fit: cover;
+  
+   
+}
+.edit-btn{
+    background-color: #304ab4; /* สีพื้นหลังตัวอย่าง */
+    border: none;
+    padding: 5px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    border-radius: 15px; /* ทำให้มุมโค้ง 10 พิกเซล */
+    
+}
+
+
+     /* สไตล์สำหรับป๊อปอัพ */
+     .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin:5% ;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        margin-left: 20%;
+        
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }

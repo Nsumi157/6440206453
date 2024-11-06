@@ -1,0 +1,133 @@
+.container-fluid{
+    background-color: #000;
+    height: 60px; 
+    display: flex; /* ใช้ Flexbox */
+    justify-content: flex-end; /* จัดให้เนื้อหาอยู่ด้านขวา */
+    align-items: center; /* จัดให้ปุ่มอยู่ตรงกลางแนวตั้ง */
+    min-height: 80px;
+    position: fixed;
+    top: 0; /* ให้ติดกับด้านบน */
+    left: 0;
+    right: 0;
+   
+}
+
+.btn-login, .btn-register{
+    background-color: #D9D9D9;
+    color: #000;
+    border: none;
+    padding: 10px 30px; /* ปรับขนาดของปุ่ม */
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 25px; /* ทำให้เป็นรูปร่างวงรี */
+    width: 160px; /* เพิ่มความยาวของปุ่ม */
+    font-size: 16px; /* เพิ่มขนาดตัวอักษร */
+
+}
+.bag {
+    color: rgb(255, 255, 255); /* เปลี่ยนสีข้อความเป็นสีขาว */
+    text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+    font-family: 'Jaro', sans-serif; /* กำหนดฟอนต์ */
+    font-size: 40px; /* กำหนดขนาดตัวอักษร */
+    background-color: black; /* กำหนดสีพื้นหลังเป็นสีดำ */
+    position: fixed; /* ตำแหน่งแน่นอน */
+    top: 0;
+    left: 0; /* ติดกับด้านซ้าย */
+    width: 100%; /* กว้างเท่ากับ 100% ของหน้าจอ */
+    height: 60px; /* กำหนดความสูงของแถบ */
+    margin-top: 0; /* ลบระยะห่างด้านบน */
+    z-index: 1000; /* ให้มีความสูงของ z-index เป็น 1000 เพื่อให้แสดงเหนือส่วนอื่น */
+}
+
+body{
+    background-color: #FFF1F1;
+    font-family: "K2D", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.box {
+    text-align: center;
+    font-family: "K2D", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 30px; /* กำหนดระยะห่างของข้อความกับขอบของกล่อง */
+    border: 1px solid black; /* เส้นขอบสีดำ */
+    background-color: rgb(255, 241, 241); /* สีพื้นหลังโปร่งใส */
+    width: 500px; /* กำหนดความกว้างของกล่อง */
+    height: 400px; /* กำหนดความสูงของกล่อง */
+    margin-left: auto; /* จัดกล่องให้อยู่ตรงกลาง */
+    margin-right: auto; /* จัดกล่องให้อยู่ตรงกลาง */
+}
+
+.login {
+    border: 1px solid black; /* เพิ่มเส้นขอบสีดำ 2px */
+    padding: 20px; /* เพิ่มระยะห่างภายในขอบ */
+    width: 300px; /* กำหนดความกว้างของกล่อง .login */
+    margin-left: auto; /* จัดกล่องให้อยู่ตรงกลาง */
+    margin-right: auto; /* จัดกล่องให้อยู่ตรงกลาง */
+}
+
+form {
+    margin: 0; /* ยกเลิกการกำหนด margin ที่มากับแบบฟอร์ม */
+}
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-container {
+    position: relative;
+    width: 100%;
+}
+.input-container input {
+    width: 100%;
+    padding-right: 40px; /* Adjust padding to prevent text overlap with icon */
+}
+.input-container i {
+    position: absolute;
+   
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+
+input[type="password"] {
+    width: 100%; /* กำหนดให้ input ขยายตามความกว้างของกล่อง */
+    box-sizing: border-box; /* ให้ input รวมถึง border และ padding ในความกว้าง */
+    padding: 8px; /* กำหนดระยะห่างของเนื้อหาภายใน input */
+    margin-bottom: 10px; /* กำหนดระยะห่างด้านล่างของ input */
+    border: 1px solid #ccc; /* กำหนดเส้นขอบของ input */
+    outline: none; /* ลบเส้นขอบในการ focus */
+   
+}
+
+
+
+input[type="submit"] {
+    max-width: 200px; /* กำหนดความกว้างสูงสุดของปุ่ม */
+    width: 100%; /* กำหนดให้ปุ่มขยายตามความยาวของพื้นที่ที่ครอบ */
+    padding: 10px; /* กำหนดระยะห่างของเนื้อหาภายในปุ่ม */
+    background-color: #EAA6A6; /* กำหนดสีพื้นหลังของปุ่ม */
+    color: rgb(0, 0, 0); /* กำหนดสีข้อความของปุ่ม */
+    border: none; /* กำหนดไม่มีเส้นขอบ */
+    border-radius: 4px; /* กำหนดขอบมน */
+    cursor: pointer; /* กำหนดเคอร์เซอร์เป็นรูปของมือ */
+    font-family: "K2D", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    display: block; /* แปลงเป็น block level element */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+}
+
+
+.input-box label .required-mark {
+    color: red; /* เปลี่ยนสีของเครื่องหมาย * เป็นสีแดง */
+    margin-left: 3px; /* ระยะห่างระหว่างข้อความกับเครื่องหมาย * */
+}
+

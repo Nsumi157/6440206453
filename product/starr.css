@@ -1,0 +1,19 @@
+.star {
+    font-size: 20px; /* Adjust size as needed */
+    color: #FFD700; /* Gold color for stars */
+
+}
+
+.star.half {
+    display: inline-block;
+    position: relative;
+    width: 0.4em;
+    overflow: hidden;
+}
+
+.star.half::before {
+    content: "\2605"; /* Filled star symbol */
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}

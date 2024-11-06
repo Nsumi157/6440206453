@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* ใช้เพื่อให้ navigation bar อยู่บนสุด */
+}
+
+.nav-icons {
+    margin-right: 20px; /* ระยะห่างระหว่าง icon และขอบขวาของ navigation bar */
+}
+
+.nav-icons span {
+    color: #fff; /* สีข้อความของ icon */
+    font-size: 24px; /* ขนาดข้อความ icon */
+    margin-left: 10px; /* ระยะห่างระหว่าง icon แต่ละตัว */
+    cursor: pointer; /* เมื่อนำเมาส์ไปชี้ icon */
+}
+
+.nav-icons span:first-child {
+    margin-left: 0; /* ไม่มีระยะห่างทางซ้ายสุดของ icon แรก */
+}
+
+
+.form-container {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold; /* ตัวอักษรหนา */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    margin-right: 20px; /* ระยะห่างด้านขวา */
+    color: white; /* สีของตัวอักษร */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    margin-left: 50px; /* ระยะห่างด้านซ้าย */
+    font-size: 500px; /* ขนาดไอคอน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ไปที่ไอคอน */
+    color: white; /* สีของไอคอน */
+    transition: color 0.3s; /* เพิ่ม transition effect */
+}
+
+.icons i:hover {
+    color: #f0a500; /* เปลี่ยนสีเมื่อชี้ไปที่ไอคอน */
+}

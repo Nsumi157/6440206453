@@ -1,0 +1,196 @@
+body {
+    background-color: #FFF1F1; /* สีพื้นหลังของหน้าเว็บ */
+}
+
+.container-fluid {
+    background-color: #000; /* สีพื้นหลังของส่วน navigation */
+    height: 60px; /* ความสูงของส่วน navigation */
+    display: flex; 
+    justify-content: flex-end; /* จัดเรียงเนื้อหาไปทางด้านขวา */
+    align-items: center; /* จัดเรียงเนื้อหาให้ตรงกลางในแนวตั้ง */
+    min-height: 80px; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+
+.btn-login, .btn-register {
+    background-color: #D9D9D9; /* สีพื้นหลังของปุ่ม */
+    color: #000; /* สีข้อความของปุ่ม */
+    border: none; /* ไม่มีเส้นขอบ */
+    padding: 10px 30px; /* ช่องว่างภายในของปุ่ม */
+    margin: 15px; /* ช่องว่างรอบๆปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือเมื่อเอาเมาส์วางบนปุ่ม */
+    border-radius: 25px; /* มุมโค้งของปุ่ม */
+    width: 160px; /* ความกว้างของปุ่ม */
+    font-size: 16px; /* ขนาดตัวอักษรของปุ่ม */
+}
+
+.bag {
+    color: rgb(255, 255, 255); /* สีข้อความของชื่อเว็บไซต์ */
+    text-align: center; /* จัดเรียงข้อความให้อยู่ตรงกลาง */
+    font-family: 'Jaro', sans-serif; /* ฟอนต์ของข้อความ */
+    font-size: 40px; /* ขนาดตัวอักษร */
+    background-color: black; /* สีพื้นหลัง */
+    position: fixed; /* ทำให้ชื่อเว็บไซต์อยู่ด้านบนสุดเสมอเมื่อเลื่อนหน้าเว็บ */
+    top: 0;
+    left: 0;
+    width: 100%; /* ความกว้างเต็มหน้าจอ */
+    height: 60px; /* ความสูงของส่วนนี้ */
+    margin-top: 0; /* ไม่มีระยะห่างด้านบน */
+    z-index: 1000; /* ลำดับความสำคัญในการแสดงผล */
+}
+
+.member {
+    font-family: "K2D", sans-serif; /* ฟอนต์ของข้อความ */
+    font-weight: 800; /* ความหนาของตัวอักษร */
+    font-style: normal; /* รูปแบบของตัวอักษร */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    margin-top: 80px; /* ระยะห่างด้านบน เพื่อไม่ให้ชนกับ navigation bar */
+}
+
+
+
+.form-box {
+    text-align: center; /* จัดเรียงเนื้อหาให้อยู่ตรงกลาง */
+    font-family: "K2D", sans-serif; /* ฟอนต์ของข้อความ */
+    font-weight: 500; /* ความหนาของตัวอักษร */
+    font-style: normal; /* รูปแบบของตัวอักษร */
+    padding: 30px; /* ช่องว่างภายในของกล่องฟอร์ม */
+    border: 1px solid black; /* เส้นขอบสีดำ */
+    background-color: rgb(255, 241, 241); /* สีพื้นหลังของกล่องฟอร์ม */
+    width: 650px; /* ความกว้างของกล่องฟอร์ม */
+   
+}
+
+.login {
+    border: 1px solid black; /* เส้นขอบสีดำ */
+    padding: 20px; /* ช่องว่างภายในของกล่องฟอร์ม */
+    width: 300px; /* ความกว้างของกล่องฟอร์ม */
+    margin-left: auto; /* จัดให้อยู่กลางในแนวนอน */
+    margin-right: auto; /* จัดให้อยู่กลางในแนวนอน */
+}
+
+
+
+.input-box input, .input-box select {
+    width: 100%; /* ความกว้างเต็มขององค์ประกอบ */
+    box-sizing: border-box; /* รวมเส้นขอบและช่องว่างภายในในการคำนวณความกว้าง */
+    padding: 8px; /* ช่องว่างภายในขององค์ประกอบ */
+    margin-bottom: 10px; /* ระยะห่างด้านล่างขององค์ประกอบ */
+    border: 1px solid #ccc; /* เส้นขอบสีเทาอ่อน */
+    outline: none; /* ไม่มีเส้นขอบเมื่อคลิก */
+}
+
+.btn-container {
+    text-align: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+}
+
+.btn {
+    max-width: 200px; /* ความกว้างสูงสุดของปุ่ม */
+    width: 100%; /* ความกว้างเต็มของปุ่ม */
+    padding: 10px; /* ช่องว่างภายในของปุ่ม */
+    background-color: #EAA6A6; /* สีพื้นหลังของปุ่ม */
+    color: rgb(0, 0, 0); /* สีข้อความของปุ่ม */
+    border: none; /* ไม่มีเส้นขอบ */
+   
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือเมื่อเอาเมาส์วางบนปุ่ม */
+    font-family: "K2D", sans-serif; /* ฟอนต์ของข้อความ */
+    font-weight: 800; /* ความหนาของตัวอักษร */
+    font-style: normal; /* รูปแบบของตัวอักษร */
+    display: block; /* จัดให้อยู่กลางในแนวนอน */
+    margin: 0 auto; /* จัดให้อยู่กลางในแนวนอน */
+}
+
+label {
+    font-family: "K2D", sans-serif; /* ฟอนต์ของข้อความ */
+    font-weight: 700; /* ความหนาของตัวอักษร */
+    font-style: normal; /* รูปแบบของตัวอักษร */
+    display: block; /* จัดให้ข้อความอยู่บรรทัดเดียว */
+    margin-bottom: 5px; /* ระยะห่างด้านล่างของข้อความ */
+    text-align: left;
+}
+.input-box label .required-mark {
+    color: red; /* เปลี่ยนสีของเครื่องหมาย * เป็นสีแดง */
+    margin-left: 3px; /* ระยะห่างระหว่างข้อความกับเครื่องหมาย * */
+}
+
+form {
+    margin: 0; /* ยกเลิกการกำหนด margin ที่มากับแบบฟอร์ม */
+}
+.form .column{
+    display: flex;
+    column-gap: 15px;
+
+}
+.form .input-box{
+    width: 50%;
+    margin-top: -15px;
+}
+.input-box{
+    clear: #333;
+
+    
+}
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #333333; /* สีข้อความ */
+    text-align: center;
+}
+.form-box .form{
+    margin-top: 5px;
+
+}
+
+
+.wrapper{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+.input-box div {
+    position:-webkit-sticky;
+    
+}
+
+.input-box input[type="password"], .input-box input[type="text"] {
+    width: 100%;
+    padding-right: 40px; /* เพิ่มช่องว่างทางขวาสำหรับไอคอน */
+    box-sizing: border-box; /* เพื่อให้ padding ถูกคำนวณรวมกับความกว้าง */
+}
+
+.input-box .fas.fa-eye, .input-box .fas.fa-eye-slash {
+    position: absolute;
+    right: 51%;
+    top:63.5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.input-box input[type="email"] {
+    width: 100%;
+    padding-left: 35px; /* เพิ่มช่องว่างทางซ้ายสำหรับไอคอน */
+    box-sizing: border-box; /* เพื่อให้ padding ถูกคำนวณรวมกับความกว้าง */
+}
+
+.input-box .fas.fa-envelope {
+    position: absolute;
+    left: 29.5%;
+    top: 33%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

@@ -1,0 +1,178 @@
+body {
+    font-family: 'K2D', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    border-radius: 15px; 
+    top: 110%;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+.cart-message {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+main {
+    padding: 1rem;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.cart-table img {
+    border-radius: 5px;
+}
+
+.cart-table .remove-link {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.cart-table .remove-link:hover {
+    text-decoration: underline;
+}
+
+tfoot {
+    background-color: #e9ecef;
+    font-weight: 600;
+}
+
+footer {
+   
+    margin: 1rem 0;
+}
+
+.continue-shopping {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    
+}
+
+.continue-shopping:hover {
+    text-decoration: underline;
+}
+
+
+
+.navbar {
+    background-color: #000;
+    height: 60px;
+    display: flex; /* ใช้ Flexbox */
+    justify-content: flex-end; /* จัดให้เนื้อหาอยู่ด้านขวา */
+    align-items: center; /* จัดให้ปุ่มอยู่ตรงกลางแนวตั้ง */
+    min-height: 80px;
+    position: fixed;
+    top: 0; /* ให้ติดกับด้านบน */
+    left: 0;
+    right: 0;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 5px; /* ระยะห่างระหว่างไอคอน */
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-btn i {
+    margin-right: 15px;
+    color: white; /* เปลี่ยนสีไอคอน user-circle เป็นสีขาว */
+}
+
+.user-name {
+    margin: 0;
+    color: white; /* เปลี่ยนสีไอคอน user-circle เป็นสีขาว */
+}
+
+.user-circle {
+    color: white; /* เปลี่ยนสีไอคอน user-circle เป็นสีขาว */
+    margin-left: 10px;
+}
+.cart-item-count {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.cart-container {
+    position: fixed;
+    top: 70px; /* Adjust based on the navbar height */
+    right: 0;
+    width: 300px;
+    max-height: calc(100vh - 70px); /* Adjust based on the navbar height */
+    overflow-y: auto;
+    background-color: #fff;
+    border-left: 1px solid #dee2e6;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
